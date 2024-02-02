@@ -54,6 +54,21 @@ body {
   text-align: center;
   background-color: lightslategray;
 }
+.nav-link {
+  padding: 4px 8px;
+  color: rgb(105, 64, 6);
+}
+.nav-link:hover {
+  color: black;
+  background-color: aqua;
+}
+.nav-link:active {
+  color: white;
+  background-color: grey;
+}
+.nav-link {
+  margin-left: 16px;
+}
 
 .main {
   max-width: 800px;
@@ -69,17 +84,4 @@ body {
 
 .main > *:first-child {
   border-top: none;
-}
-
-.nav-link {
-  padding: 4px 8px;
-  color: rgb(105, 64, 6);
-}
-.nav-link:hover {
-  color: black;
-  background-color: aqua;
-}
-.nav-link:active {
-  color: white;
-  background-color: grey;
 }
