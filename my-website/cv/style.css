@@ -59,3 +59,27 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+.main > * + * {
+  margin-top: 48px;
+}
+
+.main > * {
+  border-top: 5px solid gray;
+}
+
+.main > *:first-child {
+  border-top: none;
+}
+
+.nav-link {
+  padding: 4px 8px;
+  color: rgb(105, 64, 6);
+}
+.nav-link:hover {
+  color: black;
+  background-color: aqua;
+}
+.nav-link:active {
+  color: white;
+  background-color: grey;
+}
