@@ -60,11 +60,22 @@ body {
 
 .header {
   padding: 48px 16px;
+  padding-top: 72px;
   text-align: center;
   background-color: lightslategray;
+  position: relative;
 }
 .profession::after {
   content: "   💻" "  " "📖";
+}
+.hire-me {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  background: rgb(125, 125, 93);
+  color: rgb(29, 13, 110);
 }
 .nav-link {
   padding: 4px 8px;
@@ -92,12 +103,17 @@ body {
 
 .main > * {
   border-top: 5px solid gray;
+  padding: 0 16px;
 }
 
 .main > *:first-child {
   border-top: none;
 }
 
+.article-heading {
+  position: relative;
+  left: -16px;
+}
 .experience-heading {
   display: inline-block;
 }
