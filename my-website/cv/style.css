@@ -42,6 +42,10 @@ h3 {
     "Arial Narrow", Arial, sans-serif;
 }
 
+/*h3 {
+  font-family: "Aguafina Script";
+}*/
+
 body {
   margin: 0;
 }
@@ -92,4 +96,11 @@ body {
 
 .main > *:first-child {
   border-top: none;
+}
+
+.experience-heading {
+  display: inline-block;
+}
+.experience-subheading {
+  display: inline-block;
 }
