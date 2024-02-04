@@ -34,6 +34,17 @@ html {
     sans-serif;
   font-size: 16px;
 }
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 20px;
+  }
+}
 
 h1,
 h2,
@@ -49,6 +60,7 @@ h3 {
 
 body {
   margin: 0;
+  background-color: rgb(235, 226, 226);
 }
 
 ::selection {
@@ -93,6 +105,21 @@ body {
   color: rgb(29, 13, 110);
 }
 
+@media screen and (min-width: 992px) {
+  .hire-me {
+    position: fixed;
+  }
+}
+
+@media print {
+  .hire-me {
+    display: none;
+  }
+  .navigation {
+    display: none;
+  }
+}
+
 .nav-link {
   padding: 0.25rem 0.5rem;
   color: rgb(105, 64, 6);
@@ -100,7 +127,7 @@ body {
 
 .nav-link:hover {
   color: black;
-  background-color: aqua;
+  background-color: beige;
 }
 
 .nav-link:active {
@@ -122,6 +149,11 @@ body {
   margin-top: 3rem;
 }
 
+@media screen and (min-width: 768px) {
+  .main > * + * {
+    margin-top: 5rem;
+  }
+}
 .main > * {
   border-top: 0, 312rem solid gray;
   padding: 0 1rem;
