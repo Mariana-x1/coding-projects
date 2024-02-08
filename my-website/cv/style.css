@@ -68,7 +68,13 @@ body {
   background-color: azure;
   color: blue;
 }
-
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: black;
+}
 /**************************************************************/
 /* Specific Stylings */
 
@@ -76,7 +82,7 @@ body {
   padding: 3rem 1rem; /* 16 x 3 = 48px und 16px */
   padding-top: 4.5rem; /* 16 x 4.5 = 72px */
   text-align: center;
-  background-color: lightslategray;
+  /*background-color: lightslategray; */
   background-image: linear-gradient(0.35turn, green 10%, white 60%, grey 100%);
   position: relative;
 }
@@ -103,7 +109,8 @@ body {
   top: 2.5rem;
   padding: 1rem;
   border-radius: 0.25rem;
-  background: rgb(125, 125, 93);
+  /* background: rgb(125, 125, 93); */
+  background-image: linear-gradient(green, white);
   color: rgb(29, 13, 110);
 }
 
@@ -209,4 +216,20 @@ body {
     align-items: baseline;
     justify-content: space-between;
   }
+}
+
+.footer {
+  margin-top: 5rem;
+  /* background-color: lightgreen; */
+  background-image: linear-gradient(0deg, green, white);
+  padding: 3rem;
+}
+
+.footer-text {
+  text-align: center;
+  margin: 0;
+}
+
+.footer-link {
+  color: black;
 }
