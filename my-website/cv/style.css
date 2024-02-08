@@ -50,7 +50,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: darkblue;
+  color: var(--text-color2);
   font-family: system-ui, "Franklin Gothic Medium", "Aguafina Script",
     "Arial Narrow", Arial, sans-serif;
 }
@@ -61,20 +61,29 @@ h4 {
 
 body {
   margin: 0;
-  background-color: rgb(235, 226, 226);
+  /* background-color: rgb(235, 226, 226); */
+  --background-color: beige;
+  --text-color: black;
+  --text-color2: darkblue;
+  --accent-color: green;
+  --accent-text-color: black;
+  --nav-link-active-bg-color: lightgreen;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 ::selection {
-  background-color: azure;
-  color: blue;
+  background-color: var(--background-color);
+  /* color: blue; */
 }
-a,
+/* a,
 a:link,
 a:hover,
 a:visited,
 a:active {
-  color: black;
-}
+  color: var(--text-color);
+  background-color: var(--background-color);
+} */
 /**************************************************************/
 /* Specific Stylings */
 
@@ -111,7 +120,7 @@ a:active {
   border-radius: 0.25rem;
   /* background: rgb(125, 125, 93); */
   background-image: linear-gradient(green, white);
-  color: rgb(29, 13, 110);
+  color: var(--text-color2);
 }
 
 @media screen and (min-width: 992px) {
@@ -143,18 +152,22 @@ a:active {
 }
 
 .nav-link {
-  padding: 0.25rem 0.5rem;
-  color: rgb(105, 64, 6);
+  padding: 0.35rem 0.5rem;
+  color: var(--accent-text-color);
+  text-decoration: none;
+  /* background-image: linear-gradient(green, white); */
+  width: auto;
+  border-radius: 0.25rem;
 }
 
 .nav-link:hover {
-  color: black;
-  background-color: beige;
+  /* background-color: var(--background-color); */
+  background-image: linear-gradient(green, white);
 }
 
 .nav-link:active {
-  color: white;
-  background-color: lightgreen;
+  color: var(--text-color);
+  background-color: var(--nav-link-active-bg-color);
 }
 
 .nav-link + .nav-link {
@@ -183,7 +196,7 @@ a:active {
 }
 
 .main > * {
-  border-top: 0.312rem solid green;
+  border-top: 0.312rem solid var(--accent-color);
   padding: 0 1rem;
 }
 
@@ -226,10 +239,29 @@ a:active {
 }
 
 .footer-text {
-  text-align: center;
-  margin: 0;
+  /* text-align: center; */
+  margin: 20px;
+  margin-left: 120px;
+  padding: 0.5rem;
+  background-image: linear-gradient(green, white);
+  border-radius: 0.5rem;
+  display: flex;
+  display: inline-flex;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
-.footer-link {
-  color: black;
+.footer-link,
+.footer-link:link,
+.footer-link:active,
+.footer-link:visited {
+  color: var(--text-color);
+  margin-left: 2rem;
+  padding: 0.1rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  background-image: linear-gradient(green, white);
 }
