@@ -1,0 +1,26 @@
+.article-heading {
+  position: relative;
+  left: -1rem;
+}
+
+.experience-heading {
+  display: inline-block;
+}
+
+.experience-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-subheading {
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .experience-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
