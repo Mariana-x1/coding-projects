@@ -233,19 +233,21 @@ a:active {
 
 .footer {
   margin-top: 5rem;
+  justify-content: center;
   /* background-color: lightgreen; */
   background-image: linear-gradient(0deg, green, white);
   padding: 3rem;
+  display: flex;
 }
 
 .footer-text {
   /* text-align: center; */
   margin: 20px;
-  margin-left: 120px;
+
   padding: 0.5rem;
   background-image: linear-gradient(green, white);
   border-radius: 0.5rem;
-  display: flex;
+
   display: inline-flex;
   /* justify-content: center; */
   /* align-items: center; */
