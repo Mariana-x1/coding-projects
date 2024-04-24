@@ -2,7 +2,10 @@
   position: relative;
   left: -1rem;
 }
-
+.main-article-content {
+  position: relative;
+  left: -2rem;
+}
 .experience-heading {
   display: inline-block;
 }

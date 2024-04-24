@@ -1,15 +1,15 @@
 .footer {
-  margin-top: 5rem;
+  margin-top: 2rem;
   justify-content: center;
   /* background-color: lightgreen; */
   background-image: linear-gradient(0deg, green, white);
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
 }
 
 .footer-text {
   /* text-align: center; */
-  margin: 20px;
+  margin: 2px;
 
   padding: 0.5rem;
   background-image: linear-gradient(green, white);
